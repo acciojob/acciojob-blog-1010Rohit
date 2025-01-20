@@ -1,7 +1,26 @@
 /*  your css code here. If applicable */
-#text{
-	text-align: center;
-}
+ 
+        #text {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        #text span {
+            display: inline-block;
+            position: absolute;
+            animation: scroll-left 10s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
 .img{
 	height : 200px;
 }
